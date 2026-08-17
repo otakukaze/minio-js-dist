@@ -3,8 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var fs = _interopRequireWildcard(require("fs"), true);
-var stream = _interopRequireWildcard(require("stream"), true);
+var fs = _interopRequireWildcard(require("fs"));
+var stream = _interopRequireWildcard(require("stream"));
 var _util = require("util");
 var _nodeFs = require("fs");
 exports.fsp = _nodeFs.promises;

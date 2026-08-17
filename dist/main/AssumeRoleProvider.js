@@ -3,8 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var http = _interopRequireWildcard(require("http"), true);
-var https = _interopRequireWildcard(require("https"), true);
+var http = _interopRequireWildcard(require("http"));
+var https = _interopRequireWildcard(require("https"));
 var _url = require("url");
 var _CredentialProvider = require("./CredentialProvider.js");
 var _Credentials = require("./Credentials.js");

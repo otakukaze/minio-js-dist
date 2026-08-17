@@ -3,8 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var stream = _interopRequireWildcard(require("stream"), true);
-var errors = _interopRequireWildcard(require("../errors.js"), true);
+var stream = _interopRequireWildcard(require("stream"));
+var errors = _interopRequireWildcard(require("../errors.js"));
 var _helper = require("./helper.js");
 var _response = require("./response.js");
 var _xmlParser = require("./xml-parser.js");
