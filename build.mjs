@@ -18,7 +18,11 @@ function options(module) {
     [
       '@babel/plugin-transform-modules-commonjs',
       {
-        importInterop: 'node',
+        // Preserve default imports when requiring ESM dependencies such as
+        // query-string. Node interop treats the entire module namespace as the
+        // default value, which makes `import qs from 'query-string'` compile to
+        // `require('query-string')` instead of its `.default` export.
+        importInterop: 'babel',
       },
     ],
     ['@upleveled/remove-node-prefix'],

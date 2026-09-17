@@ -15,7 +15,7 @@
  */
 
 import { EventEmitter } from 'eventemitter3'
-import jsonLineParser from 'stream-json/jsonl/Parser.js'
+import jsonLineParser from 'stream-json/jsonl/parser.js'
 
 import { DEFAULT_REGION } from './helpers.ts'
 import type { TypedClient } from './internal/client.ts'
@@ -216,7 +216,7 @@ export class NotificationPoller extends EventEmitter<{
 
     this.client.makeRequestAsync({ method, bucketName: this.bucketName, query }, '', [200], region).then(
       (response) => {
-        const asm = jsonLineParser.make()
+        const asm = jsonLineParser.asStream()
 
         pipesetup(response, asm)
           .on('data', (data) => {

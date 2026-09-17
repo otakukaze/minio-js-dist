@@ -74,7 +74,7 @@
     "url": "https://min.io"
   },
   "engines": {
-    "node": "^16 || ^18 || >=20"
+    "node": ">=22"
   },
   "license": "Apache-2.0",
   "bugs": {
@@ -93,7 +93,7 @@
     "lodash": "^4.17.21",
     "mime-types": "^2.1.35",
     "query-string": "^9.5.0",
-    "stream-json": "^1.8.0",
+    "stream-json": "3.6.0",
     "through2": "^4.0.2",
     "xml2js": "^0.5.0 || ^0.6.2"
   },
